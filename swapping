@@ -1,0 +1,20 @@
+//Swapping of 2 variables without temporary variables
+
+#include <stdio.h>
+
+int main()
+{
+    int x=17,y=29;  //Initializing 2 variables
+    
+    printf("Before swapping: x=%d\n y=%d\n",x,y);
+    
+    x=x+y;    //17+29=46
+    y=x-y;    //46-29=17
+    x=x-y;    //46-17=29
+    
+    //Now the values of variables are swapped
+    
+    printf("After swapping: x=%d\n y=%d\n",x,y);
+
+    return 0;
+}
