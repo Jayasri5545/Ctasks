@@ -1,0 +1,40 @@
+//Decision making-- grade calculation
+
+#include <stdio.h>
+
+int main()
+{
+    int marks;
+    
+    printf("Enter marks:",marks);
+    scanf("%d",&marks);
+    
+    if(marks<=100)
+    {
+        if(marks>=85)
+        {
+        printf("Grade A");
+        }
+        else if (marks>=70)
+        {
+        printf("Grade B");
+        }
+        else if (marks>=55)
+        {
+        printf("Grade C");
+        }
+        else if (marks>=40)
+        {
+        printf("Grade D");
+        }
+        else if (marks<40)
+        {
+        printf("Grade F");
+        }
+    }
+    else
+    {
+        printf("Please enter correct marks[for 100]");
+    }
+    return 0;
+}
