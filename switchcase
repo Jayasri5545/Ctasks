@@ -1,0 +1,43 @@
+//Conditional statements---- switch... case
+
+#include <stdio.h>
+
+int main()
+{
+    int choice;
+    
+    //Printing the menu
+    printf("1.Pizza, Rs 299 \n2.French Fries, Rs 99 \n3.Sandwich, Rs 149 \n4.Burger, Rs 159 \n5.Pasta, Rs 179 \n6.Lavacake, Rs 99");
+    
+    //Read value from user
+    printf("\nEnter your choice:");
+    scanf("%d",&choice);
+    
+    // Using switch case
+    switch(choice)
+    {
+        case 1:
+            printf("Fooditem- Pizza \nPrice- Rs 299");
+            break;
+        case 2:
+            printf("Fooditem- French Fries\nPrice- Rs 99");
+            break;
+        case 3:
+            printf("Fooditem- Sandwich \nPrice- Rs 149");
+            break;
+        case 4:
+            printf("Fooditem- Burger\nPrice- Rs 159");
+            break;
+        case 5:
+            printf("Fooditem- Pasta\nPrice- Rs 179");
+            break;
+        case 6:
+            printf("Fooditem- Lavacake\nPrice- Rs 99");
+            break;
+        
+        //Default case
+        default:printf("You've entered a wrong choice");
+    }
+
+    return 0;
+}
