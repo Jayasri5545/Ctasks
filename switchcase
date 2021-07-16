@@ -36,7 +36,7 @@ int main()
             break;
         
         //Default case
-        default:printf("You've entered a wrong choice");
+        default:printf("Wrong chhoice. Use the default case");
     }
 
     return 0;
