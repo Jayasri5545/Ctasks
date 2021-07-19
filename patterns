@@ -1,0 +1,25 @@
+// PATTERNS USING NESTED LOOPS
+
+
+#include<stdio.h> 
+int main()
+{ 
+    int n,i, j; 
+    
+    //GETTING THE NUMBER OF ROWS
+    printf("Enter the number of rows:",n);
+    scanf("%d",&n);
+    
+    // OUTER LOOP
+    for(i=0;i<n;++i)
+    { 
+        //INNER LOOP
+        for(j=0;j<=i;++j)
+        { 
+            printf("01");
+        } 
+        printf("\n"); 
+        
+    } 
+    return 0; 
+}
