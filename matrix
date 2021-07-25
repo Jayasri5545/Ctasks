@@ -1,0 +1,35 @@
+//MATRIX
+
+#include<stdio.h>
+int main()
+{
+    int a[3][3],i,j,Sum;
+    printf("Enter the matrix elements:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("Enter elements[%d][%d]:",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+    // printing matrix
+    
+    printf("\nMATRIX is:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%3d",a[i][j]);
+        }
+        printf("\n");
+    }
+    
+    //sum of diagonal elements
+    for(i = 0; i < 3; i++)
+  	{
+   		Sum = Sum + a[i][i];
+  	}
+  	printf("\n The Sum of Diagonal Elements of a Matrix =  %d", Sum );
+}
