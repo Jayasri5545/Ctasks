@@ -1,0 +1,25 @@
+//  SUM OF THE DIGITS OF A NUMBER USING RECURSION
+
+#include <stdio.h>
+
+//FUNCTION
+int sum(int num){
+    if (num==0)
+    {
+        return 0;
+    }
+    else{
+        return num%10+sum(num/10);
+    }
+}
+
+
+int main() {
+    int num;
+    printf("Input number:",num);
+    scanf("%d",&num);
+    
+    printf("Output sum of digits:%d",sum(num));   //FUNCTION CALLING
+    
+    return 0;
+}
